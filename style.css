@@ -293,7 +293,7 @@ body {
   position: relative;
   top: 0;
   margin-top: -30px;
-  border-bottom: 1px solid whitesmoke;
+  /* border-bottom: 1px solid whitesmoke; */
 }
 .us {
   position: absolute;
@@ -362,7 +362,15 @@ body {
   font-weight: bolder;
 }
 .resume{
+  position: relative;
+  top: 0;
   height: 900px;
   width: 100%;
+}
+.head{
+  color: rgb(239, 14, 29);
+  margin-left: 600px;
+  margin-top: 80px;
+  font-size: 60px;
 }
 
