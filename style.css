@@ -654,11 +654,11 @@ body {
     position:relative;
     top:0px;
     font-size: 30px;
-    /* left: -100px; */
+    left: 20px;
   }
   .photo{
     top: -20px;
-    left: 70px;
+    left: 75px;
     height: 100%;
     width: 100%;
     position: absolute;
