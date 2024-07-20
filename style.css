@@ -4,7 +4,7 @@
   /* background-color: #011F26; */
 }
 body {
-  background-color: #000000;
+  background-color: #111a24;
 }
 
 .top-bar {
@@ -15,11 +15,11 @@ body {
   left: 0;
   z-index: 1000;
   transition: 0.14s ease;
-  background-color: #000000;
+  background-color: #111a24;
   height: 80px;
   border-bottom: 2px solid yellow;
 }
-.top-bar a{
+.top-bar a {
   text-decoration: none;
 }
 .logo {
@@ -113,17 +113,18 @@ body {
 
 /* responsive for navbar */
 @media (max-width: 650px) {
-  .navbar{
+  .navbar {
     width: 100%;
+    position: fixed;
   }
   .navbar li {
-      display: none;
+    display: none;
   }
   .bar .toggle {
-      display: block;
+    display: block;
   }
   .dropdown {
-      display: block;
+    display: block;
   }
 }
 
@@ -138,14 +139,14 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #000000;
+  background-color: #111a24;
   /* background-color: yellowgreen; */
 }
 #particles-js {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #111a24;
   /* background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png"); */
   background-repeat: no-repeat;
   background-size: 20%;
@@ -262,7 +263,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #000000;
+  background-color: #111a24;
   border-left: 2px solid #ff4c29;
   animation: typing 3s steps(10) infinite;
 }
@@ -343,34 +344,34 @@ body {
 }
 
 /* responsive for home section */
-@media(max-width:650px){
-  .home{
+@media (max-width: 650px) {
+  .home {
     height: 400px;
     left: 0;
     width: 100%;
     position: relative;
   }
-  .text{
+  .text {
     position: absolute;
     width: 60%;
     /* margin: 0; */
     padding: 0;
     /* background-color: green; */
   }
-  #hello{
+  #hello {
     position: absolute;
     font-size: 40px;
     top: -10px;
     left: 0;
   }
-  #me{
+  #me {
     top: 40px;
     font-size: 40px;
     position: absolute;
     left: 0;
     /* top: -30px; */
   }
-  #manoj{
+  #manoj {
     /* background-color: #ff4c29; */
     position: absolute;
     width: 100%;
@@ -379,84 +380,82 @@ body {
     top: 40px;
     padding-left: 80px;
   }
-  .wrapper{
+  .wrapper {
     position: absolute;
     top: 100px;
     left: 0px;
   }
-  .static-txt span{
+  .static-txt span {
     /* height: 10px; */
-    top:-20px;
+    top: -20px;
     width: 100px;
     display: inline-block;
     position: relative;
     /* background-color: red; */
     font-size: 40px;
-
   }
   .wrapper .dynamic-txts {
     position: relative;
     top: -10px;
-    margin-left: 0px; 
-    line-height: 70px; 
-    height: 70px;      
+    margin-left: 0px;
+    line-height: 70px;
+    height: 70px;
   }
 
   .dynamic-txts li {
-    font-size: 40px;   
+    font-size: 40px;
   }
 
   @keyframes slide {
     100% {
-      top: -280px; 
+      top: -280px;
     }
   }
-  
+
   .dynamic-txts li::after {
-    border-left: 1px solid #ff4c29; 
+    border-left: 1px solid #ff4c29;
   }
-  .icons{
+  .icons {
     /* background-color: red; */
     position: absolute;
-  top: 160px;
-  left: 30px;
+    top: 160px;
+    left: 30px;
   }
-  .image-container{
+  .image-container {
     display: none;
   }
-
 }
 
 /* responsive for smaller one */
-@media(max-width:450px){
-  .home{
+@media (max-width: 450px) {
+  .home {
     height: 400px;
     left: 0;
     width: 100%;
     position: relative;
     left: -10px;
   }
-  .text{
+  .text {
     position: absolute;
     width: 60%;
     /* margin: 0; */
     padding: 0;
     /* background-color: green; */
   }
-  #hello{
+  #hello {
     position: absolute;
     font-size: 40px;
     top: -10px;
     left: 0;
   }
-  #me{
+  #me {
     top: 40px;
     font-size: 40px;
     position: absolute;
     left: 0;
     /* top: -30px; */
   }
-  #manoj{
+  #manoj {
     /* background-color: #ff4c29; */
     position: absolute;
     width: 100%;
@@ -465,60 +464,56 @@ body {
     top: 50px;
     padding-left: 80px;
   }
-  .wrapper{
+  .wrapper {
     position: absolute;
     top: 100px;
     left: 0px;
   }
-  .static-txt span{
+  .static-txt span {
     /* height: 10px; */
-    top:-20px;
+    top: -20px;
     width: 100px;
     display: inline-block;
     position: relative;
     /* background-color: red; */
     font-size: 40px;
-
   }
   .wrapper .dynamic-txts {
     position: relative;
     top: -10px;
-    margin-left: 0px; 
-    line-height: 70px; 
-    height: 70px;      
+    margin-left: 0px;
+    line-height: 70px;
+    height: 70px;
   }
 
   .dynamic-txts li {
-    font-size: 40px;   
+    font-size: 40px;
   }
 
   @keyframes slide {
     100% {
-      top: -280px; 
+      top: -280px;
     }
   }
-  
+
   .dynamic-txts li::after {
-    border-left: 1px solid #ff4c29; 
+    border-left: 1px solid #ff4c29;
   }
-  .icons{
+  .icons {
     /* background-color: red; */
     position: absolute;
-  top: 160px;
-  left: 30px;
+    top: 160px;
+    left: 30px;
   }
-  .image-container{
+  .image-container {
     display: none;
   }
-
 }
-
-
 
 .about {
   height: 800px;
   width: 100%;
-  /* background-color: rgba(130, 198, 152, 0.705); */
+  background-color: #faefe6;
   transition: 0.5s linear;
   background-attachment: fixed;
   background-position: center;
@@ -537,8 +532,8 @@ body {
   right: 40%;
   font-size: 50px;
   font-weight: bolder;
-  color: rgb(4, 254, 112);
-  text-shadow: #ff4c29;
+  color: rgb(76, 0, 255);
+  text-shadow: #6a00f6;
 }
 .photo {
   /* background-color: #ff4c29; */
@@ -549,119 +544,142 @@ body {
   top: 90px;
   right: 25%;
 }
-.photo img{
+.photo img {
   position: absolute;
   height: 65%;
   width: 55%;
   left: -180px;
   top: 70px;
-  border: 1px solid yellow;
+  /* border: 1px solid rgb(8, 16, 127); */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   border-radius: 50%;
 }
 .info {
-  right: 50px;
-  top: 250px;
+  right: 150px;
+  top: 270px;
   height: 50%;
-  width: 70%;
+  width: 50%;
   position: absolute;
   /* background-color: red; */
+  right: 10px;
   color: white;
   /* padding: 30px;
   border: 1px solid yellow;
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
     rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
     rgba(240, 46, 170, 0.05) 25px 25px;*/
-} 
+}
 .info p {
-  color: #fdfdfd;
+  color: #071af4;
   position: absolute;
   font-size: 20px;
   bottom: 160px;
-  right: -180px;
-  height: 80%;
+  /* background-color: rgb(167, 186, 24); */
+  /* right: -100px; */
+  left: -100px;
+  height: 100%;
   width: 100%;
+  top: 70px;
   /* padding-top: 10px; */
   /* border: 1px solid black; */
 }
-.info .cv{
+.info .cv {
   position: absolute;
-  bottom: 100px;
-  left: 370px;
+  bottom: 60px;
+  left: 100px;
   border: none;
   cursor: pointer;
   border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
   height: 50px;
   width: 140px;
   color: rgb(89, 0, 255);
-  background-color: rgb(47, 255, 113);
+  background-color: rgb(255, 255, 255);
   font-weight: bolder;
+  animation: button 5s  1s infinite linear;
+}
+@keyframes button {
+  0%{
+    background: none;
+  }
+  100%{
+    background-color: rgb(0, 248, 252);
+  }
+  
 }
 
 /* responsive for about section */
-@media(max-width:650px){
-  .about{
-    height: 1000px;
+@media (max-width: 650px) {
+  .about {
+    /* height: 1000px; */
     position: relative;
     width: 100%;
-   /* margin-top: -100px; */
-   
+    /* margin-top: -100px; */
   }
-  .us h1{
-    position:relative;
-    top:0px;
+  .us h1 {
+    position: relative;
+    top: 0px;
     font-size: 30px;
     /* left: -100px; */
   }
- .about .photo{
+  .about .photo {
     top: -20px;
-    left: 70px;
+    left: 80px;
     height: 300px;
     width: 100%;
     position: absolute;
     /* background-color: red; */
   }
- .about .photo img{
-
-  position: absolute;
-  height: 70%;
-  width: 55%;
-  left: 0;
+  .about .photo img {
+    position: absolute;
+    height: 70%;
+    width: 55%;
+    left: 0;
   }
-  .info{
+  .info {
     position: absolute;
     /* background-color: green; */
     width: 90%;
-    left: -215px;
-    top: 420px;
+    left: 105px;
+    top: 460px;
   }
-  .info p{
+  .info p {
+    position: absolute;
+    left: 250px;
     font-size: 1px;
+    margin-top: 30px;
+    top: -40px;
   }
- .about .info .cv{
+  .about .info .cv {
     position: absolute;
     height: 50px;
     width: 100px;
-    left: 300px;
-    top: 0px;
+    left: 380px;
+    top: 77px;
     bottom: 300px;
   }
 }
 
 /* responsive for smaller screen */
-@media(max-width:450px){
-  .about{
+@media (max-width: 450px) {
+  .about {
     position: relative;
     width: 100%;
     top: 0;
-   
   }
-  .us h1{
-    position:relative;
-    top:0px;
+  .us h1 {
+    position: relative;
+    top: 0px;
     font-size: 30px;
     left: 20px;
   }
-  .photo{
+  .photo {
     top: -20px;
     left: 75px;
     height: 100%;
@@ -669,36 +687,45 @@ body {
     position: absolute;
     /* background-color: red; */
   }
-  .photo img{
-
-  position: absolute;
-  height: 30%;
-  width: 55%;
-  left: 0;
+  .photo img {
+    position: absolute;
+    height: 30%;
+    width: 55%;
+    left: 0;
   }
-  .info{
+  .info {
     position: absolute;
     /* background-color: green; */
     width: 90%;
     left: -215px;
     top: 420px;
   }
-  .info p{
+  .info p {
+    /* margin-top: 50px; */
     font-size: 15px;
   }
-  .info .cv{
+  .info .cv {
     position: absolute;
     height: 50px;
-  width: 100px;
-  left: 300px;
-  margin-top: 100px;
+    width: 100px;
+    left: 240px;
+    margin-top: 125px;
   }
 }
 
-
 /* services part */
-/* .services{
+.services {
+  position: relative;
+  background-color: #d6c8bc;
   height: 800px;
-
-} */
-
+}
+.services h1 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  font-size: 50px;
+  left: 45%;
+}
