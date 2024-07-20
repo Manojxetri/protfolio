@@ -6,6 +6,7 @@
 body {
   background-color: #000000;
 }
+
 .top-bar {
   display: flex;
   justify-content: space-evenly;
@@ -67,6 +68,65 @@ body {
   width: 100%;
   transition: 0.5s linear;
 }
+.bar {
+  background: none;
+  position: relative;
+  top: 30px;
+}
+.bar .toggle {
+  background: none;
+  color: white;
+  border: none;
+  height: 30px;
+  cursor: pointer;
+  display: none;
+}
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 70px;
+  height: 0;
+  background: rgb(188, 186, 186);
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  border: 10px;
+  transition: height 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.dropdown.open {
+  height: 240px;
+}
+.dropdown li {
+  padding: 0.7rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown li a {
+  color: white;
+  text-decoration: none;
+}
+.dropdown li:hover {
+  color: blue;
+}
+
+/* responsive for navbar */
+@media (max-width: 650px) {
+  .navbar{
+    width: 100%;
+  }
+  .navbar li {
+      display: none;
+  }
+  .bar .toggle {
+      display: block;
+  }
+  .dropdown {
+      display: block;
+  }
+}
+
 .home {
   /* border-bottom: 1px solid blanchedalmond; */
   /* border-top: 1px solid blanchedalmond; */
@@ -282,6 +342,91 @@ body {
   color: red;
 }
 
+/* responsive for home section */
+@media(max-width:650px){
+  .home{
+    left: 0;
+    width: 100%;
+    position: relative;
+  }
+  .text{
+    position: absolute;
+    width: 60%;
+    /* margin: 0; */
+    padding: 0;
+    /* background-color: green; */
+  }
+  #hello{
+    position: absolute;
+    font-size: 40px;
+    top: -10px;
+    left: 0;
+  }
+  #me{
+    top: 40px;
+    font-size: 40px;
+    position: absolute;
+    left: 0;
+    /* top: -30px; */
+  }
+  #manoj{
+    /* background-color: #ff4c29; */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    font-size: 40px;
+    top: 40px;
+    padding-left: 80px;
+  }
+  .wrapper{
+    position: absolute;
+    top: 100px;
+    left: 0px;
+  }
+  .static-txt span{
+    /* height: 10px; */
+    top:-20px;
+    width: 100px;
+    display: inline-block;
+    position: relative;
+    /* background-color: red; */
+    font-size: 40px;
+
+  }
+  .wrapper .dynamic-txts {
+    position: relative;
+    top: -10px;
+    margin-left: 0px; 
+    line-height: 70px; 
+    height: 70px;      
+  }
+
+  .dynamic-txts li {
+    font-size: 40px;   
+  }
+
+  @keyframes slide {
+    100% {
+      top: -280px; 
+    }
+  }
+  
+  .dynamic-txts li::after {
+    border-left: 1px solid #ff4c29; 
+  }
+  .icons{
+    /* background-color: red; */
+    position: absolute;
+  top: 160px;
+  left: 30px;
+  }
+  .image-container{
+    display: none;
+  }
+
+}
+
+
 .about {
   height: 800px;
   width: 100%;
@@ -362,5 +507,53 @@ body {
   color: rgb(89, 0, 255);
   background-color: rgb(47, 255, 113);
   font-weight: bolder;
+}
+
+/* responsive for about section */
+@media(max-width:650px){
+  .about{
+    position: relative;
+    width: 100%;
+    top: 0;
+   
+  }
+  .us h1{
+    position:relative;
+    top:0px;
+    font-size: 30px;
+    /* left: -100px; */
+  }
+  .photo{
+    top: -20px;
+    left: 70px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* background-color: red; */
+  }
+  .photo img{
+
+  position: absolute;
+  height: 30%;
+  width: 55%;
+  left: 0;
+  }
+  .info{
+    position: absolute;
+    /* background-color: green; */
+    width: 90%;
+    left: -215px;
+    top: 420px;
+  }
+  .info p{
+    font-size: 15px;
+  }
+  .info .cv{
+    position: absolute;
+    height: 50px;
+  width: 100px;
+  left: 300px;
+  top: 100px;
+  }
 }
 

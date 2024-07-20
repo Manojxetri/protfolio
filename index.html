@@ -14,37 +14,48 @@
     />
   </head>
   <body>
-    <div id="particles-js"></div>
-    <!-- stats - count particles -->
-    <div class="count-particles"></div>
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- stats.js lib -->
-    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    
     <header class="top-bar">
       <a href="index.html"><span class="logo">MANOJ</span></a>
       <nav>
         <ul class="navbar">
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#project">Project</a></li>
-         
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
+      <div class="bar">
+        <button class="toggle"><i class="fa-solid fa-bars"></i></button>
+      </div>
+      <div class="dropdown open">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </div>
     </header>
 
     <section id="home" class="home">
+      <div id="particles-js"></div>
+    <!-- stats - count particles -->
+    <div class="count-particles"></div>
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- stats.js lib -->
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
       <div class="text">
         <p>
           <span id="hello">Hello!</span><br />
-          <span id="me">I'm</span> <span>Manoj Khanal</span><br />
+          <span id="me">I'm</span> <span id="manoj">Manoj Khanal</span><br />
         </p>
         <br />
         <div class="wrapper">
-          <div class="static-txt">I'm a</div>
+          <div class="static-txt"><span>I'm a</span></div>
           <ul class="dynamic-txts">
             <li><span>Developer</span></li>
             <li><span>Designer</span></li>
@@ -104,8 +115,7 @@
         </div>
       </div>
     </section>
-
-   
+   <script src="script.js"></script>
     <script src="effect.js"></script>
   </body>
 </html>
